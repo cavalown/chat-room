@@ -1,4 +1,4 @@
-# chat-room
+# chatting-room
 
 ## Project setup
 ```

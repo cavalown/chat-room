@@ -1,41 +1,18 @@
 <template>
   <div class="home">
-    <nav-bar />
-    <div v-if="isLogging" class="before-logging">
-      <log-in />
-    </div>
-    <div class="logging-screen container" v-if="false">
-      <div class="row">
-        <div class="col-3"><FriendList /></div>
-        <div class="col-7"><ChattingRoom /></div>
-      </div>
-    </div>
-    <div class="fast-chat">
-      <FastChatRoom />
-    </div>
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import ChattingRoom from '@/components/ChattingRoom.vue';
-import LogIn from '@/components/LogIn.vue';
-import NavBar from '@/components/NavBar.vue';
-import FriendList from '@/components/FriendList.vue';
-import FastChatRoom from '@/components/FastChatRoom.vue';
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    LogIn,
-    NavBar,
-    ChattingRoom,
-    FriendList,
-    FastChatRoom,
-  },
-  data() {
-    return {
-      isLogging: false,
-    };
-  },
-};
+    HelloWorld
+  }
+}
 </script>
